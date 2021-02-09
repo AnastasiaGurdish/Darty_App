@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first_part_fragment"
+        android:icon="@drawable/ic_baseline_photo_24"
+        android:title="First part"/>
+
+    <item
+        android:id="@+id/second_part_fragment"
+        android:icon="@drawable/ic_baseline_extension_24"
+        android:title="Second part"/>
+
+    <item
+        android:id="@+id/third_part_fragment"
+        android:icon="@drawable/ic_baseline_auto_awesome_mosaic_24"
+        android:title="Third part"/>
+
+    <item
+        android:id="@+id/fourth_part_fragment"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:title="Fourth part"/>
+
+</menu>
