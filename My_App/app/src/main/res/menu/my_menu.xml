@@ -1,0 +1,38 @@
+<menu xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = "com.example.androidnavigation.MainActivity">
+    <item
+        android:id = "@+id/first_stop"
+        android:title = "Парус 2"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory = "100"
+        />
+    <item
+        android:id = "@+id/second_stop"
+        android:title = "Покровская"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory = "100"
+        />
+    <item
+        android:id = "@+id/third_stop"
+        android:title = "Проспек Свободы"
+        android:icon="@drawable/ic_build"
+        android:orderInCategory = "100"
+        />
+
+    <item
+        android:id = "@+id/fourth_stop"
+        android:title = "Заводская"
+        android:icon="@drawable/ic_baseline_brightness_7_24"
+        android:orderInCategory = "100"
+        />
+
+    <item
+        android:id = "@+id/get_back"
+        android:title = "Вернутся назад"
+        android:icon="@drawable/ic_baseline_brightness_7_24"
+        android:orderInCategory = "100"
+        />
+
+</menu>

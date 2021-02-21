@@ -3,22 +3,29 @@
       xmlns:tools = "http://schemas.android.com/tools"
       tools:context = "com.example.androidnavigation.MainActivity">
     <item
-        android:id = "@+id/home_fragment"
-        android:title = "Home"
-        android:icon="@drawable/ic_home"
+        android:id = "@+id/laboratory_work_2"
+        android:title = "2LW"
+        android:icon="@drawable/ic_baseline_local_florist_24"
         android:orderInCategory = "100"
        />
     <item
-        android:id = "@+id/profile_fragment"
-        android:title = "Profile"
-        android:icon="@drawable/ic_person"
+        android:id = "@+id/laboratory_work_3"
+        android:title = "3LW"
+        android:icon="@drawable/ic_baseline_brightness_7_24"
         android:orderInCategory = "100"
        />
     <item
-        android:id = "@+id/settings_fragment"
-        android:title = "Settings"
-        android:icon="@drawable/ic_build"
+        android:id = "@+id/laboratory_work_4"
+        android:title = "4LW"
+        android:icon="@drawable/ic_baseline_train_24"
         android:orderInCategory = "100"
        />
+
+    <item
+        android:id = "@+id/laboratory_work_5"
+        android:title = "5LW"
+        android:icon="@drawable/ic_baseline_pets_24"
+        android:orderInCategory = "100"
+        />
 
 </menu>

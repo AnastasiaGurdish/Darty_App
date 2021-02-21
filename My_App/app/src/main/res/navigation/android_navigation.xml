@@ -1,81 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android = "http://schemas.android.com/apk/res/android"
-            xmlns:app = "http://schemas.android.com/apk/res-auto"
-            xmlns:tools = "http://schemas.android.com/tools"
-            android:id = "@+id/android_navigation"
-            app:startDestination = "@+id/home_fragment">
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_navigation"
+    app:startDestination="@+id/laboratory_work_2">
 
     <fragment
-        android:id = "@+id/home_fragment"
-        android:name = "com.example.androidnavigation.fragments.HomeFragment"
-        tools:layout = "@layout/home_fragment">
-
-        <action
-            android:id = "@+id/action_goto1"
-            app:destination = "@id/first_page_fragment">
-        </action>
-
-        <action
-            android:id = "@+id/action_goto2"
-            app:destination = "@id/second_page_fragment" />
-
-    </fragment>
+        android:id="@+id/laboratory_work_2"
+        android:name="com.example.androidnavigation.fragments.LaboratoryWork2"
+        tools:layout="@layout/fragment_laboratory_work2"></fragment>
 
     <fragment
-        android:id = "@+id/profile_fragment"
-        android:name = "com.example.androidnavigation.fragments.ProfileFragment"
-        tools:layout = "@layout/home_fragment"
-        >
-    </fragment>
+        android:id="@+id/laboratory_work_3"
+        android:name="com.example.androidnavigation.fragments.LaboratoryWork3"
+        tools:layout="@layout/fragment_laboratory_work2"></fragment>
 
     <fragment
-        android:id = "@+id/settings_fragment"
-        android:name = "com.example.androidnavigation.fragments.SettingsFragment"
-        tools:layout = "@layout/home_fragment"
-        />
+        android:id="@+id/laboratory_work_4"
+        android:name="com.example.androidnavigation.fragments.LaboratoryWork4"
+        tools:layout="@layout/fragment_laboratory_work2" />
 
     <fragment
-        android:id = "@+id/first_page_fragment"
-        android:name = "com.example.androidnavigation.fragments.FirstPageFragment"
-        tools:layout = "@layout/first_page_fragment"
-        >
-        <argument
-            android:name = "testNumber"
-            app:argType = "integer"
-            android:defaultValue = "1"
-            />
-
-        <action
-            android:id = "@+id/action_go_home"
-            app:destination = "@+id/last_page_fragment" />
-
-    </fragment>
-
-    <fragment
-        android:id = "@+id/second_page_fragment"
-        android:name = "com.example.androidnavigation.fragments.SecondPageFragment"
-        tools:layout = "@layout/second_page_fragment"
-        >
-
-        <argument
-            android:name = "myarg"
-            android:defaultValue = "Android!" />
-        <deepLink app:uri = "reema.com/{myarg}" />
-
-        <action
-            android:id = "@+id/action_go_home"
-            app:destination = "@+id/last_page_fragment"
-            />
-    </fragment>
-
-    <fragment
-        android:id = "@+id/last_page_fragment"
-        android:name = "com.example.androidnavigation.fragments.LastPageFragment"
-        tools:layout = "@layout/lastpage_fragment">
-
-        <action
-            android:id="@+id/action_go_home"
-            app:popUpTo="@+id/home_fragment"
-            />
-    </fragment>
+        android:id="@+id/laboratory_work_5"
+        android:name="com.example.androidnavigation.fragments.LaboratoryWork5"
+        tools:layout="@layout/fragment_laboratory_work2" />
 </navigation>
