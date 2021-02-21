@@ -28,13 +28,17 @@ class LaboratoryWork5 : Fragment() {
 
     private fun createDatabase() {
         val dbFile = context!!.getDatabasePath(DATABASE_NAME)
-        myDatabase = if (!dbFile.exists()){
+        myDatabase = if (!dbFile.exists()) {
             try {
-                context!!.openOrCreateDatabase(DATABASE_NAME, Context.MODE_PRIVATE, null)
-            }catch (e: IOException){
+                context!!.openOrCreateDatabase(DATABASE_NAME, Context.MODE_PRIVATE, null).also {
+                    it.execSQL(DATABASE_CREATE)
+                }
+            } catch (e: IOException) {
                 throw RuntimeException("Error opening db")
             }
-        } else SQLiteDatabase.openDatabase(dbFile.path, null, SQLiteDatabase.OPEN_READWRITE)
+        } else {
+            SQLiteDatabase.openDatabase(dbFile.path, null, SQLiteDatabase.OPEN_READWRITE)
+        }
     }
 
     private fun addItems() {
